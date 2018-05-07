@@ -19,7 +19,7 @@ module.exports =  {
         test: /\.(png|gif|jpg)$/,
         loader: 'file-loader',
         options: {
-          output: 'images/'
+          outputPath: 'images/'
         }
       },
       {
