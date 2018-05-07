@@ -4,5 +4,27 @@
   "main": "index.js",
   "repository": "https://github.com/heecheolman/Portfolio_2018.git",
   "author": "KimHeeCheol <msn9975@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production node build/build",
+    "start": "NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js --inline --hot"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.11",
+    "eslint-loader": "^2arn.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "semver": "^5.5.0",
+    "style-loader": "^0.21.0",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.0",
+    "webpack-merge": "^4.1.2"
+  }
 }
