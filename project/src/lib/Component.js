@@ -1,4 +1,4 @@
-class Components {
+class Component {
   constructor() {
   
   }
@@ -12,4 +12,4 @@ class Components {
   }
 }
 
-export default Components;
+export default Component;

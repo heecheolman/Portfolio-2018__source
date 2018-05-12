@@ -1,21 +1,28 @@
-import Components from '../../lib/Components';
-import MeButton from '../molecules/MeButton';
-import RoadButton from '../molecules/RoadButton';
-import FutureButton from '../molecules/FutureButton';
+import Component from '../../lib/Component';
+import Me from '../molecules/Me';
+import Road from '../molecules/Road';
+import Future from '../molecules/Future';
 
-class HeaderBox extends Components{
+class HeaderBox extends Component{
   constructor() {
     super();
-    this.meButton = new MeButton();
-    this.roadButton = new RoadButton();
-    this.futureButton = new FutureButton();
+    this.me = new Me();
+    this.road = new Road();
+    this.future = new Future();
   }
+  
+  mount(event){
+    this.me.mount(event);
+    this.road.mount(event);
+    this.future.mount(event);
+  }
+  
   render() {
     return `
       <div class="header flex-container flex-center-sort flex-row">
-        ${this.meButton.render()}
-        ${this.roadButton.render()}
-        ${this.futureButton.render()}
+        ${this.me.render()}
+        ${this.road.render()}
+        ${this.future.render()}
       </div>
     `;
   }

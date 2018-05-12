@@ -1,0 +1,10 @@
+.road-title-wrapper {
+    width: 100%;
+    height: 60px;
+}
+
+.road-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff;
+}

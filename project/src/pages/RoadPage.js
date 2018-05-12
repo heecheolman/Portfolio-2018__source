@@ -1,14 +1,13 @@
 import Component from './../lib/Component';
-import Template from './../components/templates/MainTemplate';
+import Template from './../components/templates/RoadTemplate';
 
-// 메인페이지
-class MainPage extends Component{
+class RoadPage extends Component {
   constructor() {
     super();
     this.template = new Template();
   }
   
-  mount(event){
+  mount(event) {
     this.template.mount(event);
   }
   
@@ -19,4 +18,4 @@ class MainPage extends Component{
   }
 }
 
-export default MainPage;
+export default RoadPage;

@@ -3,14 +3,36 @@
 
 
 /*  organisms  */
-@import 'components/organisms/header.css';
+@import './components/organisms/header.css';
+@import './components/organisms/content.css';
+@import './components/organisms/road-map-box.css';
+@import './components/organisms/progress-box.css';
 
 /*  molecules  */
-@import 'components/molecules/main-header-me-button.css';
-@import 'components/molecules/main-header-road-button.css';
-@import 'components/molecules/main-header-future-button.css';
+@import './components/molecules/header-me-a.css';
+@import './components/molecules/header-road-a.css';
+@import './components/molecules/header-future-a.css';
+
+@import './components/molecules/main-content-svg-box.css';
+@import './components/molecules/main-content-title.css';
+@import './components/molecules/main-content-p.css';
+
+@import './components/molecules/right-arrow.css';
+@import './components/molecules/left-arrow.css';
+
+@import './components/molecules/road-title.css';
+@import './components/molecules/progress-text.css';
+@import './components/molecules/svg-circle.css';
+
+/*  template  */
+@import './components/template/main-template.css';
+@import './components/template/road-template.css';
+
 /*  layout  */
 @import './layout/grid.css';
 
 /*  theme  */
 @import './themes/theme.css';
+
+/*  utils  */
+@import './utils/animation.css';

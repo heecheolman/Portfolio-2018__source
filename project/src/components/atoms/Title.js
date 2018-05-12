@@ -1,6 +1,6 @@
 import Component from '../../lib/Component';
 
-class Button extends Component {
+class Title extends Component {
   constructor({ title, style }) {
     super();
     this.title = title;
@@ -9,9 +9,11 @@ class Button extends Component {
   
   render() {
     return `
-      <button class="${ this.style } common_button">${ this.title }</button>
+      <p class="${this.style}">
+        ${this.title}
+      </p>
     `;
   }
 }
 
-export default Button;
+export default Title;

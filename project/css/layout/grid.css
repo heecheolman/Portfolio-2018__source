@@ -1,3 +1,7 @@
+.center-sort {
+    margin: 0 auto;
+}
+
 .flex-container {
     display: flex;
 }
@@ -17,4 +21,8 @@
 }
 .flex-column {
     flex-direction: column;
+}
+.zero {
+    margin: 0;
+    padding: 0;
 }
