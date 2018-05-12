@@ -1,14 +1,11 @@
 import './../css/main.css';
-import MainPage from './pages/MainPage';
+import PageManager from './pages/PageManager';
+import Router from './router/Router';
 
-const mainLoop = () => {
-  const app = document.createElement('div');
-  app.id = 'app';
-  document.body.appendChild(app);
-  
-  const mainPage = new MainPage();
-  app.innerHTML = mainPage.render();
-};
+const Page = new PageManager();
+const PageRouter = new Router(Page);
 
 
-window.addEventListener('DOMContentLoaded', () => { mainLoop(); });
+PageRouter.route('/', 'MainPage');
+PageRouter.route('/road', 'RoadPage');
+PageRouter.route('/future', 'FuturePage');

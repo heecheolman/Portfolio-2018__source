@@ -34,7 +34,9 @@ module.exports =  {
   },
   plugins: [
     new htmlWebpackPlugin({
-      title: 'Portfolio',
+      template: path.join(projectDir, 'html/index.html'),
+      filename: 'index.html',
+      inject: true,
     }),
   ],
 };

@@ -7,12 +7,24 @@
     border: 1px solid #ffffff;
     border-radius: 60px;
 }
-
 .common_button:hover {
     animation: buttonHover 0.5s both;
 }
 
-@keyframes buttonHover{
+.common_p {
+    text-align: center;
+}
+
+.common_a {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.common_a:hover {
+    animation: aHover 0.5s both;
+}
+
+@keyframes buttonHover {
     0%{
         border: 1px solid #ffffff;
         background: transparent;
@@ -22,5 +34,18 @@
         border: 1px solid transparent;
         background: #ffffff;
         color: #000000;
+    }
+}
+
+@keyframes aHover {
+    0%{
+        border-bottom: 2px solid transparent;
+        background: transparent;
+        color: #ffffff;
+    }
+    100%{
+        border-bottom: 2px solid #ffffff;
+        background: transparent;
+        color: #ffffff;
     }
 }

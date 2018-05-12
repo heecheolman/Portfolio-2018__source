@@ -1,0 +1,10 @@
+.left-arrow-wrapper {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+}
+.left-arrow{
+    cursor: pointer;
+    animation: leftIng 1s ease-in-out infinite;
+}
