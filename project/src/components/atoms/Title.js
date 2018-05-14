@@ -9,11 +9,16 @@ class Title extends Component {
   
   render() {
     return `
-      <p class="${this.style}">
+      <span class="${this.style}">
         ${this.title}
-      </p>
+      </span>
     `;
   }
 }
 
 export default Title;
+
+
+/**
+ * Title 과 P 의 차이가 없다. 구분 ㄱ
+ */

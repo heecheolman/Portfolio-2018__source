@@ -21,7 +21,30 @@ class RoadTemplate extends Component {
       pageName:  'MainPage',
     });
     this.downArrowBox = new DownArrowBox();
-    this.popBox = new PopBox();
+    this.popBox1 = new PopBox({
+      title: '출생',
+      year: '1995.09.18',
+      aos: 'first-road',
+      bar: 'first-bar',
+    });
+    this.popBox2 = new PopBox({
+      title: '고창고등학교 졸업',
+      year: '2014.02',
+      aos: 'second-road',
+      bar: 'second-bar',
+    });
+    this.popBox3 = new PopBox({
+      title: '남서울대학교 입학',
+      year: '2014.03',
+      aos: 'third-road',
+      bar: 'third-bar',
+    });
+    this.popBox4 = new PopBox({
+      title: '남서울대학교 졸업예정',
+      year: '2020.02',
+      aos: 'fourth-road',
+      bar: 'fourth-bar',
+    });
   }
   
   mount(event) {
@@ -29,7 +52,10 @@ class RoadTemplate extends Component {
     this.rightArrowBox.mount(event);
     this.leftArrowBox.mount(event);
     this.downArrowBox.mount(event);
-    this.popBox.mount(event);
+    this.popBox1.mount(event);
+    this.popBox2.mount(event);
+    this.popBox3.mount(event);
+    this.popBox4.mount(event);
   }
   
   render() {
@@ -41,12 +67,25 @@ class RoadTemplate extends Component {
         </div>
         <div class="section">
             <div class="road-pop-area flex-container flex-center-sort">
-                ${this.popBox.render()}
+                ${this.popBox1.render()}
             </div>
         </div>
-        <div class="section flex-container flex-center-sort">
-            ${this.rightArrowBox.render()}
-            ${this.leftArrowBox.render()}
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox2.render()}
+            </div>
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox3.render()}
+            </div>
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox4.render()}
+                ${this.rightArrowBox.render()}
+                ${this.leftArrowBox.render()}
+            </div>
         </div>
     </div>
     `;

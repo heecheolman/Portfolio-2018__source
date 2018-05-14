@@ -2,23 +2,33 @@ import Component from './../../lib/Component';
 import SVG from './../atoms/SVG';
 
 class ProgressBar extends Component {
-  constructor() {
+  constructor({ aos, bar }) {
     super();
+    this.aos = aos;
+    this.bar = bar;
     this.svg = new SVG({
       svg: `
-        <svg width="600px" height="5px" x="0px" y="0px">
-            <path class="road-progress-bar" d="M0 0 l600 0"/>
+        <svg width="65vw" height="5px" x="0px" y="0px">
+            <path class="road-progress-bar ${this.bar}" d="M0 0 l1000 0"/>
         </svg>
       `,
     });
   }
   
   mount(event) {
-    const aosEle = document.querySelector('.road-pop-box');
-    const bar = document.querySelector('.road-progress-bar');
+    const aosEle = document.querySelector(`.${this.aos}`);
+    const bar = document.querySelector(`.${this.bar}`);
+    const lastSection = document.querySelector('.fourth-road');
+    const downArrow = document.querySelector('.down-arrow');
     
     window.addEventListener('scroll', () => {
       aosEle.classList.contains('aos-animate') ? bar.classList.add('progressing') : bar.classList.remove('progressing');
+      
+      if(lastSection.classList.contains('aos-animate')){
+        downArrow.style.display = 'none';
+      }else {
+        downArrow.style.display = 'block';
+      }
     });
   }
   

@@ -1,5 +1,5 @@
 .road-progress-wrapper {
-    width: 100%;
+    width: 65vw;
     height: 30px;
 }
 
@@ -12,5 +12,5 @@
 }
 
 .progressing {
-    animation: move 3s linear both;
+    animation: move 1.6s linear both;
 }

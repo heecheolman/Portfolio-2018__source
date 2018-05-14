@@ -4,11 +4,22 @@ import ProgressBar from './../molecules/ProgressBar';
 import PopText from './../molecules/PopText';
 
 class PopBox extends Component {
-  constructor() {
+  constructor({ title, year, aos, bar }) {
     super();
-    this.popTitle = new PopTitle();
+    this.title = title;
+    this.year = year;
+    this.aos = aos;
+    this.bar = bar;
+    
+    this.popTitle = new PopTitle({
+      title: this.title,
+      year: this.year,
+    });
     this.popText = new PopText();
-    this.progressBar = new ProgressBar();
+    this.progressBar = new ProgressBar({
+      aos: this.aos,
+      bar: this.bar,
+    });
   }
   
   mount(event) {
@@ -19,7 +30,7 @@ class PopBox extends Component {
   
   render() {
     return `
-      <div class="road-pop-box" data-aos="fade-left">
+      <div class="road-pop-box ${this.aos}" data-aos="fade-left">
         ${this.popTitle.render()}
         ${this.progressBar.render()}
         ${this.popText.render()}

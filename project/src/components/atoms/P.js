@@ -9,7 +9,9 @@ class P extends Component {
   
   render() {
     return `
-        <p class="${this.style}">${this.text}</p>
+        <p class="${this.style}">
+            ${this.text}
+        </p>
       `;
   }
 }

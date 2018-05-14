@@ -2,25 +2,29 @@ import Component from './../../lib/Component';
 import Title from './../atoms/Title';
 
 class PopTitle extends Component {
-  constructor() {
+  constructor({ title, year}) {
     super();
+    this.title = title;
+    this.year = year;
+    
     this.title = new Title({
-      title: '출생',
+      title: this.title,
       style: 'road-pop-title'
+    });
+    this.year = new Title({
+      title: this.year,
+      style: 'road-pop-year',
     });
   }
   
   mount(event) {
-    /*
-    * pop 되면 progress bar classList.add('progressing')
-    *
-    * */
-  }
   
+  }
   render() {
     return `
-      <div class="road-pop-title-wrapper">
+      <div class="road-pop-title-wrapper flex-container flex-space-between-sort">
         ${this.title.render()}
+        ${this.year.render()}
       </div>
     `;
   }

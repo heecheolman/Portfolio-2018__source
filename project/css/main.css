@@ -24,6 +24,7 @@
 
 @import './components/molecules/road-title.css';
 @import './components/molecules/road-pop-title.css';
+@import './components/molecules/road-pop-year.css';
 @import './components/molecules/road-pop-text.css';
 @import './components/molecules/road-progress-bar.css';
 

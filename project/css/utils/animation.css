@@ -19,11 +19,11 @@
 @keyframes rightIng {
     0%,
     100% {
-        transform: translate(0, 0);
+        transform: translate(-20px, 0);
     }
 
     50% {
-        transform: translate(20px, 0);
+        transform: translate(0, 0);
     }
 }
 
