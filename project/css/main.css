@@ -5,8 +5,9 @@
 /*  organisms  */
 @import './components/organisms/header.css';
 @import './components/organisms/content.css';
-@import './components/organisms/road-map-box.css';
-@import './components/organisms/progress-box.css';
+@import './components/organisms/section.css';
+@import './components/organisms/road-pop-box.css';
+@import './components/organisms/road-pop-area.css';
 
 /*  molecules  */
 @import './components/molecules/header-me-a.css';
@@ -19,10 +20,12 @@
 
 @import './components/molecules/right-arrow.css';
 @import './components/molecules/left-arrow.css';
+@import './components/molecules/down-arrow.css';
 
 @import './components/molecules/road-title.css';
-@import './components/molecules/progress-text.css';
-@import './components/molecules/svg-circle.css';
+@import './components/molecules/road-pop-title.css';
+@import './components/molecules/road-pop-text.css';
+@import './components/molecules/road-progress-bar.css';
 
 /*  template  */
 @import './components/template/main-template.css';
@@ -36,3 +39,4 @@
 
 /*  utils  */
 @import './utils/animation.css';
+@import './utils/aos.css';

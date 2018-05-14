@@ -1,9 +1,10 @@
 import Component from './../../lib/Component';
 
 import TitleBox from './../organisms/TitleBox';
-import RoadMapBox from './../organisms/RoadMapBox';
 import RightArrowBox from './../organisms/RightArrowBox';
 import LeftArrowBox from './../organisms/LeftArrowBox';
+import DownArrowBox from './../organisms/DownArrowBox';
+import PopBox from './../organisms/PopBox';
 
 class RoadTemplate extends Component {
   constructor() {
@@ -19,23 +20,34 @@ class RoadTemplate extends Component {
       template: '.road-template',
       pageName:  'MainPage',
     });
-    this.roadMapBox = new RoadMapBox();
+    this.downArrowBox = new DownArrowBox();
+    this.popBox = new PopBox();
   }
   
   mount(event) {
     this.titleBox.mount(event);
     this.rightArrowBox.mount(event);
     this.leftArrowBox.mount(event);
-    this.roadMapBox.render(event);
+    this.downArrowBox.mount(event);
+    this.popBox.mount(event);
   }
   
   render() {
     return `
-    <div class="road-template flex-container flex-center-sort flex-column">
-        ${this.leftArrowBox.render()}
-        ${this.rightArrowBox.render()}
-        ${this.titleBox.render()}
-        ${this.roadMapBox.render()}
+    <div class="road-template">
+        <div class="section flex-center-sort flex-container flex-column">
+            ${this.titleBox.render()}
+            ${this.downArrowBox.render()}
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox.render()}
+            </div>
+        </div>
+        <div class="section flex-container flex-center-sort">
+            ${this.rightArrowBox.render()}
+            ${this.leftArrowBox.render()}
+        </div>
     </div>
     `;
   }

@@ -11,10 +11,6 @@
     animation: buttonHover 0.5s both;
 }
 
-.common_p {
-    text-align: center;
-}
-
 .common_a {
     cursor: pointer;
     display: block;

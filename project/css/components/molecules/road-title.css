@@ -1,6 +1,7 @@
 .road-title-wrapper {
-    width: 100%;
+    width: 90%;
     height: 60px;
+    top: 0;
 }
 
 .road-title {

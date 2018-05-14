@@ -11,10 +11,7 @@ class Road extends Component {
     });
   }
   mount(event) {
-    // const t = document.querySelector('.header-road-a');
-    // t.addEventListener('click', () => {
-    //   Router.moveToLocation('RoadPage');
-    // });
+  
   }
   render() {
     return `

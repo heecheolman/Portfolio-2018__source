@@ -1,12 +1,13 @@
 import Component from '../../lib/Component';
 
 class SVG extends Component {
-  constructor({ svg, style }) {
+  constructor({ svg }) {
     super();
     this.svg = svg;
   }
   
   mount(event) {
+  
   }
   
   render() {

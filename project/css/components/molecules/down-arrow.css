@@ -1,0 +1,10 @@
+.down-arrow-wrapper {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}
+.down-arrow{
+    cursor: pointer;
+    animation: downIng 1s ease-in-out infinite;
+}
