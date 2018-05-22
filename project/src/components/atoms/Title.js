@@ -9,7 +9,7 @@ class Title extends Component {
   
   render() {
     return `
-      <p class="${this.style}">
+      <p class="${this.style} common_p zero">
         ${this.title}
       </p>
     `;
@@ -17,3 +17,8 @@ class Title extends Component {
 }
 
 export default Title;
+
+
+/**
+ * Title 과 P 의 차이가 없다. 구분 ㄱ
+ */

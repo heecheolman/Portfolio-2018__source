@@ -1,0 +1,10 @@
+.description-box {
+    width: 50vw;
+    height: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .description-box {
+        width: 250px;
+    }
+}

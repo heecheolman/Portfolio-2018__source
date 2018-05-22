@@ -1,20 +1,20 @@
 import Component from './../../lib/Component';
-import RoadTitle from './../molecules/RoadTitle.js';
+import TitleArea from './../molecules/TitleArea';
 
 class TitleBox extends Component {
   constructor() {
     super();
-    this.roadTitle = new RoadTitle();
+    this.titleArea = new TitleArea();
   }
   
   mount(event) {
-    this.roadTitle.mount(event);
+    this.titleArea.mount(event);
   }
   
   render() {
     return `
-      <div class="road-title-wrapper flex-container flex-center-sort">
-        ${this.roadTitle.render()}
+      <div class="title-box flex-container flex-center-sort">
+        ${this.titleArea.render()}
       </div>
     `;
   }

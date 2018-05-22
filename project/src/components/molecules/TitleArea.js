@@ -1,26 +1,22 @@
 import Component from './../../lib/Component';
 import Title from './../atoms/Title';
 
-class ProgressText extends Component {
+class TitleArea extends Component {
   constructor() {
     super();
     this.title = new Title({
-      title: '1995.09.18',
-      style: 'progress-text',
+      title: 'road',
+      style: 'road-title',
     });
-  }
-  
-  mount(event) {
-  
   }
   
   render() {
     return `
-      <div class="progress-wrapper">
+      <div class="flex-container flex-center-sort flex-column">
         ${this.title.render()}
       </div>
     `;
   }
 }
 
-export default ProgressText;
+export default TitleArea;

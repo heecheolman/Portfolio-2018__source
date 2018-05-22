@@ -18,6 +18,7 @@ class LeftArrow extends Component {
   mount(event) {
     const t = document.querySelector(`${this.selector}`);
     t.addEventListener('click', () => {
+      console.log('aa');
       const template = document.querySelector(`${this.template}`);
       template.classList.add('fade_Out');
       template.addEventListener('animationend', () => {

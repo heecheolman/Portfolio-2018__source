@@ -1,9 +1,9 @@
 import Component from './../../lib/Component';
-
 import TitleBox from './../organisms/TitleBox';
-import RoadMapBox from './../organisms/RoadMapBox';
 import RightArrowBox from './../organisms/RightArrowBox';
 import LeftArrowBox from './../organisms/LeftArrowBox';
+import DownArrowBox from './../organisms/DownArrowBox';
+import PopBox from './../organisms/PopBox';
 
 class RoadTemplate extends Component {
   constructor() {
@@ -17,25 +17,75 @@ class RoadTemplate extends Component {
     this.leftArrowBox = new LeftArrowBox({
       selector: '.left-arrow',
       template: '.road-template',
-      pageName:  'MainPage',
+      pageName: 'MainPage',
     });
-    this.roadMapBox = new RoadMapBox();
+    this.downArrowBox = new DownArrowBox();
+    this.popBox1 = new PopBox({
+      title: '출생',
+      year: '1995.09.18',
+      aos: 'first-road',
+      bar: 'first-bar',
+    });
+    this.popBox2 = new PopBox({
+      title: '고창고등학교 졸업',
+      year: '2014.02',
+      aos: 'second-road',
+      bar: 'second-bar',
+    });
+    this.popBox3 = new PopBox({
+      title: '남서울대학교 입학',
+      year: '2014.03',
+      aos: 'third-road',
+      bar: 'third-bar',
+    });
+    this.popBox4 = new PopBox({
+      title: '남서울대학교 졸업예정',
+      year: '2020.02',
+      aos: 'fourth-road',
+      bar: 'fourth-bar',
+    });
   }
   
   mount(event) {
     this.titleBox.mount(event);
     this.rightArrowBox.mount(event);
     this.leftArrowBox.mount(event);
-    this.roadMapBox.render(event);
+    this.downArrowBox.mount(event);
+    this.popBox1.mount(event);
+    this.popBox2.mount(event);
+    this.popBox3.mount(event);
+    this.popBox4.mount(event);
   }
   
   render() {
     return `
-    <div class="road-template flex-container flex-center-sort flex-column">
-        ${this.leftArrowBox.render()}
-        ${this.rightArrowBox.render()}
-        ${this.titleBox.render()}
-        ${this.roadMapBox.render()}
+    <div class="road-template">
+        <div class="section flex-center-sort flex-container flex-column">
+            ${this.titleBox.render()}
+            ${this.downArrowBox.render()}
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox1.render()}
+            </div>
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox2.render()}
+            </div>
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox3.render()}
+            </div>
+        </div>
+        <div class="section">
+            <div class="road-pop-area flex-container flex-center-sort">
+                ${this.popBox4.render()}
+                ${this.rightArrowBox.render()}
+                ${this.leftArrowBox.render()}
+            </div>
+        </div>
     </div>
     `;
   }

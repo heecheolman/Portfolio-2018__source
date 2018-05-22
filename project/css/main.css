@@ -3,15 +3,15 @@
 
 
 /*  organisms  */
-@import './components/organisms/header.css';
 @import './components/organisms/content.css';
-@import './components/organisms/road-map-box.css';
-@import './components/organisms/progress-box.css';
+@import './components/organisms/section.css';
+@import './components/organisms/road-pop-box.css';
+@import './components/organisms/road-pop-area.css';
+@import 'components/organisms/title-box.css';
+@import 'components/organisms/search-box.css';
+@import 'components/organisms/description-box.css';
 
 /*  molecules  */
-@import './components/molecules/header-me-a.css';
-@import './components/molecules/header-road-a.css';
-@import './components/molecules/header-future-a.css';
 
 @import './components/molecules/main-content-svg-box.css';
 @import './components/molecules/main-content-title.css';
@@ -19,15 +19,21 @@
 
 @import './components/molecules/right-arrow.css';
 @import './components/molecules/left-arrow.css';
+@import './components/molecules/down-arrow.css';
 
 @import './components/molecules/road-title.css';
-@import './components/molecules/progress-text.css';
-@import './components/molecules/svg-circle.css';
+@import './components/molecules/road-pop-title.css';
+@import './components/molecules/road-pop-year.css';
+@import './components/molecules/road-pop-text.css';
+@import './components/molecules/road-progress-bar.css';
+@import './components/molecules/search-bar.css';
+@import './components/molecules/label.css';
+@import './components/molecules/descript.css';
 
 /*  template  */
 @import './components/template/main-template.css';
 @import './components/template/road-template.css';
-
+@import './components/template/future-template.css';
 /*  layout  */
 @import './layout/grid.css';
 
@@ -36,3 +42,4 @@
 
 /*  utils  */
 @import './utils/animation.css';
+@import './utils/aos.css';

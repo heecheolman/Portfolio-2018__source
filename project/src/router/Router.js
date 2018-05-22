@@ -33,7 +33,7 @@ class Router {
   
   static moveToLocation(pageName) {
     const page = Object.keys(routeList).find(key => routeList[key].locationId === pageName);
-    
+    console.log(page);
     if(page === undefined || page === null) {
       console.log('없는 주소 입니다');
       return;
