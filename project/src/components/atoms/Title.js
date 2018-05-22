@@ -9,9 +9,9 @@ class Title extends Component {
   
   render() {
     return `
-      <span class="${this.style}">
+      <p class="${this.style} common_p zero">
         ${this.title}
-      </span>
+      </p>
     `;
   }
 }

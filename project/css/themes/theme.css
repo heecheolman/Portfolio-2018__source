@@ -20,6 +20,13 @@
     animation: aHover 0.5s both;
 }
 
+.common_title {
+    color: #ffffff;
+}
+
+.common_p {
+    color: #ffffff;
+}
 @keyframes buttonHover {
     0%{
         border: 1px solid #ffffff;

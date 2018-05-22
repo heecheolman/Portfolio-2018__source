@@ -1,0 +1,43 @@
+.descript-present {
+    opacity: 0;
+}
+.descript-future {
+    opacity: 0;
+}
+.descript-basic {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+}
+.descript {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 150%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .descript {
+        font-size: 12px;
+    }
+    .descript-basic {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 840px) {
+    .descript-basic {
+        font-size: 1.7rem;
+    }
+}
+
+.fade_In{
+    animation: fadeIn 0.3s both;
+}
+
+.fade_Out{
+    animation: fadeOut 0.3s both;
+}

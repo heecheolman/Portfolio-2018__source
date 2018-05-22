@@ -1,6 +1,6 @@
-.road-template{
-    width: 100%;
-    height: auto;
+.future-template{
+    width: 100vw;
+    height: 100vh;
     animation: fadeIn 0.5s both;
 }
 

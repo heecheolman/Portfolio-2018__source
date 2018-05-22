@@ -30,7 +30,7 @@ class PopBox extends Component {
   
   render() {
     return `
-      <div class="road-pop-box ${this.aos}" data-aos="fade-left">
+      <div class="road-pop-box ${this.aos}" data-aos="zoom-out">
         ${this.popTitle.render()}
         ${this.progressBar.render()}
         ${this.popText.render()}

@@ -1,11 +1,12 @@
-.road-title-wrapper {
+.future-title-wrapper {
     width: 90%;
     height: 60px;
     top: 0;
 }
 
-.road-title {
-    font-size: 5rem;
+.future-title {
+    font-size: 2rem;
     font-weight: 500;
     color: #ffffff;
+    background-color: #c00;
 }

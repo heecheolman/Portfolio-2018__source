@@ -1,21 +1,21 @@
 import Component from './../../lib/Component';
 
-
-class RoadMapBox extends Component {
+class Label extends Component {
   constructor() {
     super();
   }
   
   mount(event) {
+  
   }
   
   render() {
     return `
-      <div class="road-map-box flex-center-sort flex-container">
-      
-      </div>
+      <label class="typing">
+        present || future
+      </label>
     `;
   }
 }
 
-export default RoadMapBox;
+export default Label;

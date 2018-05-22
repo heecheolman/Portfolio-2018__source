@@ -9,7 +9,7 @@ class P extends Component {
   
   render() {
     return `
-        <p class="${this.style}">
+        <p class="${this.style} common_p zero">
             ${this.text}
         </p>
       `;

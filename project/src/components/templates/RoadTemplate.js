@@ -1,5 +1,4 @@
 import Component from './../../lib/Component';
-
 import TitleBox from './../organisms/TitleBox';
 import RightArrowBox from './../organisms/RightArrowBox';
 import LeftArrowBox from './../organisms/LeftArrowBox';
@@ -18,7 +17,7 @@ class RoadTemplate extends Component {
     this.leftArrowBox = new LeftArrowBox({
       selector: '.left-arrow',
       template: '.road-template',
-      pageName:  'MainPage',
+      pageName: 'MainPage',
     });
     this.downArrowBox = new DownArrowBox();
     this.popBox1 = new PopBox({

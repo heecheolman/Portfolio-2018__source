@@ -8,7 +8,7 @@ class ProfileSVG extends Component {
   render() {
     return `
       <div class="svg-box flex-center-sort flex-container">
-        <svg x="0px" y="0px" viewBox="0 0 466.972 466.972" width="150px" height="150px">
+        <svg x="0px" y="0px" viewBox="0 0 466.972 466.972" width="100px" height="100px">
           <circle cx="171.225" cy="243.032" r="10.831" fill="#FFFFFF"/>
           <circle cx="295.746" cy="243.032" r="10.831" fill="#FFFFFF"/>
           <path d="M233.482,316.188c6.747,0,13.133-2.563,17.982-7.219c2.191-2.104,2.262-5.586,0.159-7.776s-5.585-2.262-7.777-0.159   c-2.791,2.679-6.471,4.154-10.364,4.154c-3.888,0-7.565-1.476-10.355-4.154c-2.19-2.102-5.672-2.032-7.777,0.159   c-2.104,2.19-2.032,5.673,0.159,7.776C220.357,313.625,226.74,316.188,233.482,316.188z" fill="#FFFFFF"/>
