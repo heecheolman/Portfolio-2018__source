@@ -57,3 +57,34 @@
         stroke-dashoffset: 0;
     }
 }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes buttonHover {
+    0%{
+        border: 1px solid #ffffff;
+        background: transparent;
+        color: #ffffff;
+    }
+    100%{
+        border: 1px solid transparent;
+        background: #ffffff;
+        color: #000000;
+    }
+}
+
+@keyframes aHover {
+    0%{
+        color: #ffffff;
+    }
+    100%{
+        color: #3aaaff;
+    }
+}

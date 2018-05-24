@@ -1,6 +1,6 @@
-.future-template{
+.product-template {
     width: 100%;
-    height: 100vh;
+    height: auto;
     animation: fadeIn 0.5s both;
 }
 
@@ -11,4 +11,3 @@
 .fade_Out{
     animation: fadeOut 0.5s both;
 }
-

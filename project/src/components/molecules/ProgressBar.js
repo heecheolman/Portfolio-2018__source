@@ -8,7 +8,7 @@ class ProgressBar extends Component {
     this.bar = bar;
     this.svg = new SVG({
       svg: `
-        <svg width="65vw" height="5px" x="0px" y="0px">
+        <svg width="100%" height="5px" x="0px" y="0px">
             <path class="road-progress-bar ${this.bar}" d="M0 0 l1500 0"/>
         </svg>
       `,

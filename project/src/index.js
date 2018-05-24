@@ -13,3 +13,5 @@ const PageRouter = new Router(Page);
 PageRouter.route('/', 'MainPage');
 PageRouter.route('/road', 'RoadPage');
 PageRouter.route('/future', 'FuturePage');
+PageRouter.route('/product', 'ProductPage');
+PageRouter.route('/contact', 'ContactPage');

@@ -8,7 +8,10 @@ import PopBox from './../organisms/PopBox';
 class RoadTemplate extends Component {
   constructor() {
     super();
-    this.titleBox = new TitleBox();
+    this.titleBox = new TitleBox({
+      title: '🎬',
+      style: 'title',
+    });
     this.rightArrowBox = new RightArrowBox({
       selector: '.right-arrow',
       template: '.road-template',

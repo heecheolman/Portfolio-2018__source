@@ -1,0 +1,18 @@
+.product-title {
+    height: 80px;
+    line-height: 80px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.product-title:hover {
+    animation: aHover 0.2s linear both;
+}
+@media screen and (max-width: 500px) {
+    .product-title {
+        height: 60px;
+        line-height: 60px;
+        font-size: 2rem;
+    }
+}
