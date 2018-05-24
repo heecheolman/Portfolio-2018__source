@@ -4,23 +4,39 @@
 
 .flex-container {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .flex-center-sort {
     justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+
     align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
 }
 
 .flex-space-between-sort {
     justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
     align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
 }
 
 .flex-row {
     flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
 }
 .flex-column {
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
 }
 .zero {
     margin: 0;

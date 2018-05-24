@@ -1,11 +1,11 @@
-.road-title-wrapper {
+.title-wrapper {
     width: 90%;
     height: 60px;
     top: 0;
 }
 
-.road-title {
-    font-size: 5rem;
+.title {
+    font-size: 10rem;
     font-weight: 500;
     color: #ffffff;
 }

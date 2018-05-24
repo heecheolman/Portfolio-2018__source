@@ -1,14 +1,27 @@
 html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: url("../../assets/background1.jpg");
-    background-attachment: fixed;
+    background: url("../../assets/background1.jpg") fixed center;
     background-size: cover;
-    background-position: center;
+}
+::-moz-selection {
+    background-color: #0000FF;
+    color: #00FF00;
 }
 
+::selection {
+    background-color: #0000FF;
+    color: #00FF00;
+}
+img {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
 * {
     box-sizing: border-box;
 }

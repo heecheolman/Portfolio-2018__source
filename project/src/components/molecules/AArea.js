@@ -1,22 +1,23 @@
 import Component from './../../lib/Component';
-import Title from './../atoms/Title';
+import A from './../atoms/A';
 
-class TitleArea extends Component {
-  constructor({ title, style }) {
+class AArea extends Component {
+  constructor({ title, style, href }) {
     super();
-    this.title = new Title({
+    this.a = new A({
       title: title,
       style: style,
+      href: href,
     });
   }
   
   render() {
     return `
       <div class="flex-container flex-center-sort flex-column">
-        ${this.title.render()}
+        ${this.a.render()}
       </div>
     `;
   }
 }
 
-export default TitleArea;
+export default AArea;

@@ -1,7 +1,8 @@
 .left-arrow-wrapper {
     width: 30px;
     height: 30px;
-    position: absolute;
+    position: fixed;
+    top: 50%;
     left: 0;
 }
 .left-arrow{

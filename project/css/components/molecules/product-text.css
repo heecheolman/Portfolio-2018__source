@@ -1,0 +1,36 @@
+.text-section {
+    width: 400px;
+    height: 400px;
+}
+
+.product-text-wrapper {
+    width: 400px;
+    height: auto;
+    max-height: 400px;
+}
+.product-text {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 180%;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 500px) {
+    .text-section {
+        width: 300px;
+        height: 300px;
+    }
+
+    .product-text-wrapper {
+        width: 250px;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .product-text {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}

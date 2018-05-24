@@ -2,9 +2,12 @@ import Component from './../../lib/Component';
 import TitleArea from './../molecules/TitleArea';
 
 class TitleBox extends Component {
-  constructor() {
+  constructor({ title, style }) {
     super();
-    this.titleArea = new TitleArea();
+    this.titleArea = new TitleArea({
+      title: title,
+      style: style,
+    });
   }
   
   mount(event) {
