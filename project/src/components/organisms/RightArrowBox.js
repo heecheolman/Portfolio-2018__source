@@ -17,7 +17,7 @@ class RightArrowBox extends Component{
   
   render(){
     return `
-      <div class="right-arrow-wrapper flex-container flex-center-sort">
+      <div class="arrow-right-wrapper flex-container flex-center-sort">
         ${this.rightArrow.render()}
       </div>
     `;

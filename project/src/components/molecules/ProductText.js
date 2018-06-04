@@ -6,13 +6,13 @@ class ProductText extends Component {
     super();
     this.text = new P({
       text: text,
-      style: 'product-text',
+      style: 'product-box__text-section__desc',
     });
   }
   
   render() {
     return `
-      <div class="product-text-wrapper">
+      <div class="product-box__text-section__desc-wrapper">
         ${this.text.render()}
       </div>
     `;

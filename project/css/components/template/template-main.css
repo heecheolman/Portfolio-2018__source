@@ -1,0 +1,14 @@
+.template-main{
+    width: 100%;
+    height: 100vh;
+    animation: fadeIn 0.5s both;
+}
+
+.fade_In{
+    animation: fadeIn 0.5s both;
+}
+
+.fade_Out{
+    animation: fadeOut 0.5s both;
+}
+

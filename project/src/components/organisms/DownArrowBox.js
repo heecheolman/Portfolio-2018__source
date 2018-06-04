@@ -8,12 +8,12 @@ class DownArrowBox extends Component {
   }
   
   mount(event) {
-  
+    this.downArrow.mount(event);
   }
   
   render() {
     return `
-      <div class="down-arrow-wrapper flex-container flex-center-sort">
+      <div class="arrow-down-wrapper flex-container flex-center-sort">
         ${this.downArrow.render()}
       </div>
     `;

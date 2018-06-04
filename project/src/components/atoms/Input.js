@@ -27,17 +27,17 @@ class Input extends Component {
       
       if(inputEle.value === 'present') {
         descBox.innerHTML = this.store.option.present.render();
-        descEle = document.querySelector('.descript-present');
+        descEle = document.querySelector('.descript--present');
         descEle.classList.add('fade_In');
         basic = false;
       }else if(inputEle.value === 'future') {
         descBox.innerHTML = this.store.option.future.render();
-        descEle = document.querySelector('.descript-future');
+        descEle = document.querySelector('.descript--future');
         descEle.classList.add('fade_In');
         basic = false;
       }else if(!basic) {
         descBox.innerHTML = this.store.option.basic.render();
-        descEle = document.querySelector('.descript-basic');
+        descEle = document.querySelector('.descript--basic');
         descEle.classList.add('fade_In');
         basic = true;
       }

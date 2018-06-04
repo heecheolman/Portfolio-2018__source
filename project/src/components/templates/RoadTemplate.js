@@ -13,39 +13,39 @@ class RoadTemplate extends Component {
       style: 'title',
     });
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
-      template: '.road-template',
+      selector: '.arrow-right',
+      template: '.template-road',
       pageName: 'FuturePage',
     });
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
-      template: '.road-template',
+      selector: '.arrow-left',
+      template: '.template-road',
       pageName: 'MainPage',
     });
     this.downArrowBox = new DownArrowBox();
     this.popBox1 = new PopBox({
       title: '출생',
       year: '1995.09.18',
-      aos: 'first-road',
-      bar: 'first-bar',
+      aos: 'road-pop-box__aos--1',
+      bar: 'road-pop-box__bar--1',
     });
     this.popBox2 = new PopBox({
       title: '고창고등학교 졸업',
       year: '2014.02',
-      aos: 'second-road',
-      bar: 'second-bar',
+      aos: 'road-pop-box__aos--2',
+      bar: 'road-pop-box__bar--2',
     });
     this.popBox3 = new PopBox({
       title: '남서울대학교 입학',
       year: '2014.03',
-      aos: 'third-road',
-      bar: 'third-bar',
+      aos: 'road-pop-box__aos--3',
+      bar: 'road-pop-box__bar--3',
     });
     this.popBox4 = new PopBox({
       title: '남서울대학교 졸업예정',
       year: '2020.02',
-      aos: 'fourth-road',
-      bar: 'fourth-bar',
+      aos: 'road-pop-box__aos--4',
+      bar: 'road-pop-box__bar--4',
     });
   }
   
@@ -62,32 +62,24 @@ class RoadTemplate extends Component {
   
   render() {
     return `
-    <div class="road-template">
+    <div class="template-road">
         <div class="section flex-center-sort flex-container flex-column">
             ${this.titleBox.render()}
             ${this.downArrowBox.render()}
         </div>
         <div class="section">
-            <div class="road-pop-area flex-container flex-center-sort">
-                ${this.popBox1.render()}
-            </div>
+            ${this.popBox1.render()}
         </div>
         <div class="section">
-            <div class="road-pop-area flex-container flex-center-sort">
-                ${this.popBox2.render()}
-            </div>
+            ${this.popBox2.render()}
         </div>
         <div class="section">
-            <div class="road-pop-area flex-container flex-center-sort">
-                ${this.popBox3.render()}
-            </div>
+            ${this.popBox3.render()}
         </div>
         <div class="section">
-            <div class="road-pop-area flex-container flex-center-sort">
-                ${this.popBox4.render()}
-                ${this.rightArrowBox.render()}
-                ${this.leftArrowBox.render()}
-            </div>
+            ${this.popBox4.render()}
+            ${this.rightArrowBox.render()}
+            ${this.leftArrowBox.render()}
         </div>
     </div>
     `;

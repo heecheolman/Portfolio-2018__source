@@ -11,17 +11,17 @@ class ProductTemplate extends Component {
   constructor() {
     super();
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
-      template: '.product-template',
+      selector: '.arrow-right',
+      template: '.template-product',
       pageName: 'ContactPage',
     });
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
-      template: '.product-template',
+      selector: '.arrow-left',
+      template: '.template-product',
       pageName: 'FuturePage',
     });
     this.titleBox = new TitleBox({
-      title: '🎁',
+      title: '💾',
       style: 'title',
     });
     this.downArrowBox = new DownArrowBox();
@@ -44,7 +44,7 @@ class ProductTemplate extends Component {
   
   render() {
     return `
-      <div class="product-template flex-container flex-center-sort flex-column">
+      <div class="template-product flex-container flex-center-sort flex-column">
         <div class="section flex-center-sort flex-container">
             ${this.titleBox.render()}
         </div>

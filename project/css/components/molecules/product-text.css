@@ -1,14 +1,14 @@
-.text-section {
+.product-box__desc-section {
     width: 400px;
     height: 400px;
 }
 
-.product-text-wrapper {
+.product-box__text-section__desc-wrapper {
     width: 400px;
     height: auto;
     max-height: 400px;
 }
-.product-text {
+.product-box__text-section__desc {
     color: #ffffff;
     font-weight: 200;
     font-size: 13px;
@@ -18,18 +18,18 @@
 
 
 @media screen and (max-width: 500px) {
-    .text-section {
+    .product-box__desc-section {
         width: 300px;
         height: 300px;
     }
 
-    .product-text-wrapper {
+    .product-box__text-section__desc-wrapper {
         width: 250px;
         height: auto;
         max-height: 400px;
     }
 
-    .product-text {
+    .product-box__text-section__desc {
         font-size: 12px;
         line-height: 150%;
     }

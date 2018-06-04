@@ -8,8 +8,8 @@ class MainTemplate extends Component {
     super();
     this.contentBox = new ContentBox();
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
-      template: '.main-template',
+      selector: '.arrow-right',
+      template: '.template-main',
       pageName: 'RoadPage',
     });
   }
@@ -21,7 +21,7 @@ class MainTemplate extends Component {
   
   render() {
     return `
-      <div class="main-template flex-container flex-center-sort">
+      <div class="template-main flex-container flex-center-sort">
         ${this.rightArrowBox.render()}
         ${this.contentBox.render()}
       </div>

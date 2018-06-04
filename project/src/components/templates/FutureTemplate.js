@@ -9,13 +9,13 @@ class FutureTemplate extends Component {
   constructor() {
     super();
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
-      template: '.future-template',
+      selector: '.arrow-left',
+      template: '.template-future',
       pageName: 'RoadPage',
     });
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
-      template: '.future-template',
+      selector: '.arrow-right',
+      template: '.template-future',
       pageName: 'ProductPage',
     });
     this.searchBox = new SearchBox();
@@ -31,7 +31,7 @@ class FutureTemplate extends Component {
   
   render() {
     return `
-      <div class="future-template flex-container flex-center-sort">
+      <div class="template-future flex-container flex-center-sort">
         ${this.leftArrowBox.render()}
         ${this.rightArrowBox.render()}
         <div class="section flex-center-sort flex-container flex-column">
