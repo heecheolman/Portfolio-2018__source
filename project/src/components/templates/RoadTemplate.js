@@ -14,12 +14,12 @@ class RoadTemplate extends Component {
     });
     this.rightArrowBox = new RightArrowBox({
       selector: '.right-arrow',
-      template: '.road-template',
+      template: '.template-road',
       pageName: 'FuturePage',
     });
     this.leftArrowBox = new LeftArrowBox({
       selector: '.left-arrow',
-      template: '.road-template',
+      template: '.template-road',
       pageName: 'MainPage',
     });
     this.downArrowBox = new DownArrowBox();
@@ -62,7 +62,7 @@ class RoadTemplate extends Component {
   
   render() {
     return `
-    <div class="road-template">
+    <div class="template-road">
         <div class="section flex-center-sort flex-container flex-column">
             ${this.titleBox.render()}
             ${this.downArrowBox.render()}

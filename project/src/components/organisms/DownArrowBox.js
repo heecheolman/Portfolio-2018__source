@@ -8,7 +8,7 @@ class DownArrowBox extends Component {
   }
   
   mount(event) {
-  
+    this.downArrow.mount(event);
   }
   
   render() {

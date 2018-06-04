@@ -8,6 +8,7 @@
     font-size: 3rem;
     font-weight: 200;
     text-align: center;
+    cursor: default;
 }
 .descript {
     text-align: justify;
@@ -15,7 +16,6 @@
     font-weight: 200;
     line-height: 150%;
 }
-
 
 @media screen and (max-width: 500px) {
     .descript {

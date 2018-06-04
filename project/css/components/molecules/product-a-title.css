@@ -7,8 +7,9 @@
     letter-spacing: 2px;
 }
 .product-title:hover {
-    animation: aHover 0.2s linear both;
+    animation: productTitleHover 0.3s linear both;
 }
+
 @media screen and (max-width: 500px) {
     .product-title {
         height: 60px;

@@ -19,14 +19,14 @@ class ProgressBar extends Component {
     const aosEle = document.querySelector(`.${this.aos}`);
     const bar = document.querySelector(`.${this.bar}`);
     const lastSection = document.querySelector('.fourth-road');
-    const downArrow = document.querySelector('.down-arrow');
+    // const downArrow = document.querySelector('.down-arrow');
     window.addEventListener('scroll', () => {
       aosEle.classList.contains('aos-animate') ? bar.classList.add('progressing') : bar.classList.remove('progressing');
 
       if(lastSection.classList.contains('aos-animate')){
-        downArrow.style.visibility = 'hidden';
+        // downArrow.style.visibility = 'hidden';
       }else {
-        downArrow.style.visibility = 'visible';
+        // downArrow.style.visibility = 'visible';
       }
     });
   }

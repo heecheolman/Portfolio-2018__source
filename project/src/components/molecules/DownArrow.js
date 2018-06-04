@@ -13,7 +13,21 @@ class DownArrow extends Component {
   }
   
   mount(event) {
-  
+    const downArrow = document.querySelector('.down-arrow');
+    const entireHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
+    let viewHeight;
+    let top;
+    window.addEventListener('scroll', () => {
+      top = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      viewHeight  = document.body.offsetHeight;
+      if(top + viewHeight >= entireHeight) {
+        downArrow.style.transition = '0.3s';
+        downArrow.style.opacity = '0';
+      }else {
+        downArrow.style.transition = '0.3s';
+        downArrow.style.opacity = '1';
+      }
+    });
   }
   
   render() {

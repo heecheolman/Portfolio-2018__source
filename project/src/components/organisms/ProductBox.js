@@ -19,7 +19,10 @@ class ProductBox extends Component {
     this.text = new ProductText({
       text: text,
     });
-    
+  }
+  
+  mount(event) {
+  
   }
   
   render() {

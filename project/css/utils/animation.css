@@ -80,11 +80,26 @@
     }
 }
 
-@keyframes aHover {
+@keyframes productTitleHover {
     0%{
         color: #ffffff;
     }
     100%{
         color: #3aaaff;
+    }
+}
+
+@keyframes snsHover {
+    from {
+        /*transform: translateY(0);*/
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+    }
+    to {
+        border: 1px solid transparent;
+        background-color: #ffffff;
+        color: #000000;
+        /*transform: translateY(-5px);*/
     }
 }
