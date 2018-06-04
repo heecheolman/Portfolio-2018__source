@@ -9,11 +9,11 @@ class PopTitle extends Component {
     
     this.title = new Title({
       title: this.title,
-      style: 'road-pop-title'
+      style: 'road-pop-box__title',
     });
     this.year = new Title({
       title: this.year,
-      style: 'road-pop-year',
+      style: 'road-pop-box__year',
     });
   }
   
@@ -22,7 +22,7 @@ class PopTitle extends Component {
   }
   render() {
     return `
-      <div class="road-pop-title-wrapper flex-container flex-space-between-sort">
+      <div class="road-pop-box__title-wrapper flex-container flex-space-between-sort">
         ${this.title.render()}
         ${this.year.render()}
       </div>

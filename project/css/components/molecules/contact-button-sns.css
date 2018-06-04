@@ -1,10 +1,10 @@
-.button-sns-wrapper {
+.contact__button-sns-wrapper {
     width: 90px;
     height: 40px;
     line-height: 40px;
 }
 
-.sns {
+.contact__button-sns {
     width: 100%;
     height: 100%;
     border: 1px solid #ffffff;
@@ -15,6 +15,6 @@
     font-weight: 300;
 }
 
-.sns:hover {
+.contact__button-sns:hover {
     animation: snsHover 0.3s ease-out both;
 }

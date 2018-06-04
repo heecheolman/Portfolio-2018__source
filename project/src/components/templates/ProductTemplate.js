@@ -11,12 +11,12 @@ class ProductTemplate extends Component {
   constructor() {
     super();
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
+      selector: '.arrow-right',
       template: '.template-product',
       pageName: 'ContactPage',
     });
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
+      selector: '.arrow-left',
       template: '.template-product',
       pageName: 'FuturePage',
     });

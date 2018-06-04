@@ -6,17 +6,17 @@ class ContactBox extends Component {
     super();
     this.githubButton = new ContactButton({
       title: 'github',
-      style: 'github sns',
+      style: 'github contact__button-sns',
       href: 'https://github.com/heecheolman',
     });
     this.facebookButton = new ContactButton({
       title: 'facebook',
-      style: 'facebook sns',
+      style: 'facebook contact__button-sns',
       href: 'https://www.facebook.com/profile.php?id=100006997631031',
     });
     this.tistoryButton = new ContactButton({
       title: 'tistory',
-      style: 'tistory sns',
+      style: 'tistory contact__button-sns',
       href: 'http://heecheolman.tistory.com/',
     });
   }

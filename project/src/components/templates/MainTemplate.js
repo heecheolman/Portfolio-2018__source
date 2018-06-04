@@ -8,7 +8,7 @@ class MainTemplate extends Component {
     super();
     this.contentBox = new ContentBox();
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
+      selector: '.arrow-right',
       template: '.template-main',
       pageName: 'RoadPage',
     });

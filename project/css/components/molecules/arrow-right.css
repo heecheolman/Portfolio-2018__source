@@ -1,4 +1,4 @@
-.right-arrow-wrapper {
+.arrow-right-wrapper {
     width: 30px;
     height: 30px;
     position: fixed;
@@ -6,7 +6,7 @@
     right: 0;
 }
 
-.right-arrow {
+.arrow-right {
     cursor: pointer;
     animation: rightIng 1s ease-in-out infinite;
 }

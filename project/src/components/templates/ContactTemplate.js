@@ -8,7 +8,7 @@ class ContactTemplate extends Component {
   constructor() {
     super();
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
+      selector: '.arrow-left',
       template: '.template-contact',
       pageName: 'ProductPage',
     });

@@ -1,10 +1,10 @@
-.descript-present {
+.descript--present {
     opacity: 0;
 }
-.descript-future {
+.descript--future {
     opacity: 0;
 }
-.descript-basic {
+.descript--basic {
     font-size: 3rem;
     font-weight: 200;
     text-align: center;
@@ -21,7 +21,7 @@
     .descript {
         font-size: 12px;
     }
-    .descript-basic {
+    .descript--basic {
         font-size: 1.5rem;
         font-weight: 200;
         text-align: center;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 501px) and (max-width: 840px) {
-    .descript-basic {
+    .descript--basic {
         font-size: 1.7rem;
     }
 }

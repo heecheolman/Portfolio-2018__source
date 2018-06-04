@@ -1,18 +1,18 @@
-.road-pop-year-wrapper {
+.road-pop-box__year-wrapper {
     width: 100%;
     height: 20px;
     line-height: 20px;
     text-align: right;
 }
 
-.road-pop-year {
+.road-pop-box__year {
     font-size: 1rem;
     font-weight: 300;
     color: #ffffff;
 }
 
 @media screen and (max-width: 450px) {
-    .road-pop-year {
+    .road-pop-box__year {
         font-size: 0.9rem;
     }
 }

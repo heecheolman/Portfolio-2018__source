@@ -1,9 +1,9 @@
-.road-progress-wrapper {
+.road-pop-box__progress-wrapper {
     width: 65vw;
     height: 30px;
 }
 
-.road-progress-bar {
+.road-pop-box__progress-bar {
     fill: #ffffff;
     stroke: #ffffff;
     stroke-width: 4px;
@@ -11,6 +11,6 @@
     stroke-dasharray: 1300;
 }
 
-.progressing {
+.road-pop-box__progress-bar--progressing {
     animation: move 1.6s linear both;
 }

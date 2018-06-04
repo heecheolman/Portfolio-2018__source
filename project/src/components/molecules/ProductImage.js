@@ -1,10 +1,10 @@
 import Component from './../../lib/Component';
 import Img from './../atoms/Img';
 
-class ProductImg extends Component {
+class ProductImage extends Component {
   constructor({ src, alt }) {
     super();
-    this.productImg = new Img({
+    this.productImage = new Img({
       src: src,
       alt: alt,
     });
@@ -12,11 +12,11 @@ class ProductImg extends Component {
   
   render() {
     return `
-      <div class="productImg-wrapper">
-        ${this.productImg.render()}
+      <div class="product-img-wrapper">
+        ${this.productImage.render()}
       </div>
     `;
   }
 }
 
-export default ProductImg;
+export default ProductImage;

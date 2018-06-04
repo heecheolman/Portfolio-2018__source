@@ -1,11 +1,11 @@
-.left-arrow-wrapper {
+.arrow-left-wrapper {
     width: 30px;
     height: 30px;
     position: fixed;
     top: 50%;
     left: 0;
 }
-.left-arrow{
+.arrow-left{
     cursor: pointer;
     animation: leftIng 1s ease-in-out infinite;
 }

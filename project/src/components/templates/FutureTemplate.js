@@ -9,12 +9,12 @@ class FutureTemplate extends Component {
   constructor() {
     super();
     this.leftArrowBox = new LeftArrowBox({
-      selector: '.left-arrow',
+      selector: '.arrow-left',
       template: '.template-future',
       pageName: 'RoadPage',
     });
     this.rightArrowBox = new RightArrowBox({
-      selector: '.right-arrow',
+      selector: '.arrow-right',
       template: '.template-future',
       pageName: 'ProductPage',
     });

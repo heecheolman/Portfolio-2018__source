@@ -21,7 +21,7 @@ class ContentBox extends Component {
   
   render() {
     return `
-      <div class="main-content_box flex-container flex-center-sort flex-column center-sort">
+      <div class="main-content-box flex-container flex-center-sort flex-column center-sort">
         ${this.profileSVG.render()}
         ${this.profileTitle.render()}
         ${this.profileDesc.render()}

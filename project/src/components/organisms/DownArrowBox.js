@@ -13,7 +13,7 @@ class DownArrowBox extends Component {
   
   render() {
     return `
-      <div class="down-arrow-wrapper flex-container flex-center-sort">
+      <div class="arrow-down-wrapper flex-container flex-center-sort">
         ${this.downArrow.render()}
       </div>
     `;

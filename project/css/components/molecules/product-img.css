@@ -1,4 +1,4 @@
-.productImg-wrapper {
+.product-image-wrapper {
     border: 1px solid #ffffff;
     border-radius: 350px;
     width: 230px;
@@ -6,20 +6,20 @@
     overflow: hidden;
 }
 
-.product-img {
+.product-image {
     width: 100%;
     height: auto;
 }
-.product-img:hover {
+.product-image:hover {
     animation: zoomIn 0.2s ease-out both;
 }
 
 @media screen and (max-width: 500px) {
-    .productImg-wrapper {
+    .product-image-wrapper {
         width: 130px;
         height: 130px;
     }
-    .product-img {
+    .product-image {
         width: 100%;
         height: auto;
     }

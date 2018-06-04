@@ -11,13 +11,9 @@ class ContactButton extends Component {
     });
   }
   
-  mount(event) {
-  
-  }
-  
   render() {
     return `
-      <div class="button-sns-wrapper">
+      <div class="contact__button-sns-wrapper">
         ${this.button.render()}
       </div>
     `;

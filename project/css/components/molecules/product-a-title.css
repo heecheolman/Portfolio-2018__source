@@ -1,4 +1,4 @@
-.product-title {
+.product-box__title {
     height: 80px;
     line-height: 80px;
     color: #ffffff;
@@ -6,12 +6,12 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
-.product-title:hover {
+.product-box__title:hover {
     animation: productTitleHover 0.3s linear both;
 }
 
 @media screen and (max-width: 500px) {
-    .product-title {
+    .product-box__title {
         height: 60px;
         line-height: 60px;
         font-size: 2rem;
