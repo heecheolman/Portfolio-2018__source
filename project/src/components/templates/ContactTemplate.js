@@ -13,7 +13,7 @@ class ContactTemplate extends Component {
       pageName: 'ProductPage',
     });
     this.titleBox = new TitleBox({
-      title: '🤩️',
+      title: '😆',
       style: 'title',
     });
     this.contactBox = new ContactBox();

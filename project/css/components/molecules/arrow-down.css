@@ -1,10 +1,12 @@
 .arrow-down-wrapper {
+    z-index: 100;
     width: 100px;
     height: 100px;
     position: fixed;
     bottom: 0;
 }
 .arrow-down{
+    z-index: 100;
     cursor: pointer;
     animation: downIng 1s ease-in-out infinite;
 }
