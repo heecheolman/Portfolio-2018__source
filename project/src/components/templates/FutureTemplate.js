@@ -26,7 +26,6 @@ class FutureTemplate extends Component {
     this.leftArrowBox.mount(event);
     this.rightArrowBox.mount(event);
     this.searchBox.mount(event);
-    this.descriptionBox.mount(event);
   }
   
   render() {

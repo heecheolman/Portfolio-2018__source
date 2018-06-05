@@ -12,7 +12,7 @@ class ProductImage extends Component {
   
   render() {
     return `
-      <div class="product-img-wrapper">
+      <div class="product-image-wrapper">
         ${this.productImage.render()}
       </div>
     `;

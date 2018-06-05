@@ -4,7 +4,7 @@ const production = [
   {
     src: production__1,
     title: 'Beenzino',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    text: '예술가이자 래퍼인 가수 빈지노에 대해 소개한 일종의 소개페이지이다. 두번째 대학과제였으며 2017년 12월에 완성했다. 개발기간은 1개월정도 된다.<br><br>단순한 팬심으로 시작한 웹페이지인데 나름 정성을 많이 쏟았다. 혼자 진행한 프로젝트라 구조를 어떻게 잡을까부터 시작해서 콘텐츠를 어떻게 구성해야할것인지까지 고민이 많았다.<br><br>해당 프로젝트를 통해 html, css 구조를 잡는데 개념이 많이 잡혔고, 자바스크립트 라이브러리를 적용하는방법, flex-box 와 반응형을 익힐 수 있는 좋은 기회가 된 프로젝트이다. 나를 웹의 길로 빠져들게 한 프로젝트이며 웹의 첫사랑이다.<br><br>아마 대학과제 용도가아니라 진짜로 빈지노에게 주고싶은 마음으로 만든 웹페이지... 매일 밤을 새다시피 했던 기억이난다...흠',
     alt: '',
     href: '#',
   },

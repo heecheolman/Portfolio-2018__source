@@ -9,7 +9,7 @@ class Img extends Component {
   
   render() {
     return `
-        <img alt="${this.alt}" class="product-img" src="${this.src}"/>
+        <img alt="${this.alt}" class="product-image" src="${this.src}"/>
     `;
   }
 }

@@ -30,7 +30,7 @@
 @import 'components/molecules/road-pop-box__progress-bar.css';
 @import 'components/molecules/future-search-box-search-bar.css';
 @import 'components/molecules/future-search-bar-label.css';
-@import './components/molecules/descript.css';
+@import 'components/molecules/future-descript.css';
 
 @import './components/molecules/product-img.css';
 @import 'components/molecules/product-a-title.css';

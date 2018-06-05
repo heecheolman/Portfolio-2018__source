@@ -5,18 +5,12 @@ import ProfileTitle from '../molecules/ProfileTitle';
 import ProfileDesc from '../molecules/ProfileDesc';
 
 
-class ContentBox extends Component {
+class ProfileBox extends Component {
   constructor() {
     super();
     this.profileSVG = new ProfileSVG();
     this.profileTitle = new ProfileTitle();
     this.profileDesc = new ProfileDesc();
-  }
-  
-  mount(event){
-    this.profileTitle.mount(event);
-    this.profileSVG.mount(event);
-    this.profileDesc.mount(event);
   }
   
   render() {
@@ -30,4 +24,4 @@ class ContentBox extends Component {
   }
 }
 
-export default ContentBox;
+export default ProfileBox;
