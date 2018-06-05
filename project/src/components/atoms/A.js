@@ -10,7 +10,7 @@ class A extends Component {
   
   render() {
     return `
-      <a class="${this.style} common--a" href="${this.href}">${this.title}</a>
+      <a class="${this.style} common--a" href="${this.href}" target="_blank">${this.title}</a>
     `;
   }
 }

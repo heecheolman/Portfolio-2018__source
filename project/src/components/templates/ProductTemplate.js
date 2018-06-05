@@ -33,6 +33,13 @@ class ProductTemplate extends Component {
       alt: production[0].alt,
       href: production[0].href,
     });
+    this.production__2 = new ProductBox({
+      src: production[1].src,
+      title: production[1].title,
+      text: production[1].text,
+      alt: production[1].alt,
+      href: production[1].href,
+    });
   }
   
   mount(event) {
@@ -40,6 +47,7 @@ class ProductTemplate extends Component {
     this.rightArrowBox.mount(event);
     this.downArrowBox.mount(event);
     this.production__1.mount(event);
+    this.production__2.mount(event);
   }
   
   render() {
@@ -49,13 +57,7 @@ class ProductTemplate extends Component {
             ${this.titleBox.render()}
         </div>
         <div class="section flex-center-sort flex-container">
-            ${this.production__1.render()}
-        </div>
-        <div class="section flex-center-sort flex-container">
-            ${this.production__1.render()}
-        </div>
-        <div class="section flex-center-sort flex-container">
-            ${this.production__1.render()}
+            ${this.production__2.render()}
         </div>
         <div class="section flex-center-sort flex-container">
             ${this.production__1.render()}
