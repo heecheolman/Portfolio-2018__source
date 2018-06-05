@@ -18,6 +18,7 @@ class ProfileBox extends Component {
       <div class="main-content-box flex-container flex-center-sort flex-column center-sort">
         ${this.profileSVG.render()}
         ${this.profileTitle.render()}
+        <div class="main-content-box__line"></div>
         ${this.profileDesc.render()}
       </div>
     `;

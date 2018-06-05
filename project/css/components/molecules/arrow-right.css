@@ -1,4 +1,5 @@
 .arrow-right-wrapper {
+    z-index: 100;
     width: 30px;
     height: 30px;
     position: fixed;
@@ -7,6 +8,7 @@
 }
 
 .arrow-right {
+    z-index: 100;
     cursor: pointer;
     animation: rightIng 1s ease-in-out infinite;
 }
