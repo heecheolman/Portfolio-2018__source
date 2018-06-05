@@ -11,7 +11,7 @@ class Button extends Component {
   render() {
     return `
     <a href="${this.href}" target="_blank">
-      <button class="${ this.style } common_button">${ this.title }</button>
+      <button class="${ this.style } common--button">${ this.title }</button>
     </a>
     `;
   }

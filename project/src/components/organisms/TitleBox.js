@@ -10,10 +10,6 @@ class TitleBox extends Component {
     });
   }
   
-  mount(event) {
-    this.titleArea.mount(event);
-  }
-  
   render() {
     return `
       <div class="title-box flex-container flex-center-sort">

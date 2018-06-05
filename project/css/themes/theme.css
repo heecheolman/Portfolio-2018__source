@@ -1,18 +1,14 @@
-.common_button {
+.common--button {
     cursor: pointer;
 }
 
-.common_a {
+.common--aa {
     cursor: pointer;
     display: block;
     text-align: center;
 }
 
-.common_title {
-    color: #ffffff;
-}
-
-.common_p {
+.common--p {
     color: #ffffff;
 }
 

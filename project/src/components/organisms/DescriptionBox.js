@@ -7,10 +7,6 @@ class DescriptionBox extends Component {
     this.descript = new Descript();
   }
   
-  mount(event) {
-    this.descript.mount(event);
-  }
-  
   render() {
     return `
       <div class="description-box flex-center-sort flex-container">
