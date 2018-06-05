@@ -6,6 +6,9 @@ html, body {
     height: 100%;
     background: url("../../src/components/assets/background.jpg") fixed center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 ::-moz-selection {
     background-color: #0000FF;
