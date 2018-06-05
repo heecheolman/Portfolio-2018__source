@@ -26,4 +26,6 @@ class Manager extends Component{
   }
 }
 
+
+
 export default Manager;
